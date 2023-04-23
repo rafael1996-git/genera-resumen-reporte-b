@@ -1,0 +1,60 @@
+INFO    2023-03-14 15:56:36,104 [main] com.eglobal.genera.resumen.reporte.b.GeneraResumenReporteB  - Inicia consulta de entidades Emisoras de la BUB
+INFO    2023-03-14 15:56:38,658 [main] com.eglobal.genera.resumen.reporte.b.GeneraResumenReporteB  - Inicia consulta de entidades Emisoras de la BU
+INFO    2023-03-14 15:56:38,658 [main] com.eglobal.genera.resumen.reporte.b.GeneraResumenReporteB  - Inicia consulta de entidades Adquirente de la BUB
+INFO    2023-03-14 15:56:39,637 [main] com.eglobal.genera.resumen.reporte.b.GeneraResumenReporteB  - Finaliza consulta de entidades Adquirente de la BUB
+INFO    2023-03-14 15:56:39,643 [main] com.eglobal.genera.resumen.reporte.b.GeneraResumenReporteB  - Inicia consulta de Bines Evertec de la BUB
+INFO    2023-03-14 15:57:04,738 [main] com.eglobal.genera.resumen.reporte.b.GeneraResumenReporteB  - Finaliza consulta de Bines Evertec de la BUB
+INFO    2023-03-14 15:57:04,758 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 12
+INFO    2023-03-14 15:57:04,949 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 12
+INFO    2023-03-14 15:57:04,950 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 191
+INFO    2023-03-14 15:57:04,950 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 26
+INFO    2023-03-14 15:57:05,121 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 26
+INFO    2023-03-14 15:57:05,121 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 170
+INFO    2023-03-14 15:57:05,121 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 27
+INFO    2023-03-14 15:57:05,283 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 27
+INFO    2023-03-14 15:57:05,283 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 161
+INFO    2023-03-14 15:57:05,283 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 36
+INFO    2023-03-14 15:57:05,445 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 36
+INFO    2023-03-14 15:57:05,445 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 162
+INFO    2023-03-14 15:57:05,445 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 37
+INFO    2023-03-14 15:57:05,614 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 37
+INFO    2023-03-14 15:57:05,614 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 169
+INFO    2023-03-14 15:57:05,614 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 38
+INFO    2023-03-14 15:57:05,781 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 38
+INFO    2023-03-14 15:57:05,782 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 167
+INFO    2023-03-14 15:57:05,782 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 54
+INFO    2023-03-14 15:57:05,942 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 54
+INFO    2023-03-14 15:57:05,942 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 160
+INFO    2023-03-14 15:57:05,943 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 82
+INFO    2023-03-14 15:57:06,103 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 82
+INFO    2023-03-14 15:57:06,103 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 160
+INFO    2023-03-14 15:57:06,103 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Inicia ejecución de consultas emisor: 86
+INFO    2023-03-14 15:57:06,262 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Finaliza ejecución de consultas emisor: 86
+INFO    2023-03-14 15:57:06,262 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenAbstracto  - Tiempo de Ejecución ms: 159
+INFO    2023-03-14 15:57:06,335 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Se guardarán un total de 5 Emisores
+INFO    2023-03-14 15:57:06,335 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia ciclo de guardado de Resumen: Total y por marcas
+INFO    2023-03-14 15:57:06,335 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia consulta de carátulas del emisor BR
+INFO    2023-03-14 15:57:06,387 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia ejecución de consulta carátulas Emisor ATMS12
+INFO    2023-03-14 15:57:06,530 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza ejecución de consulta carátulas Emisor ATMS12
+INFO    2023-03-14 15:57:06,533 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza consulta de carátulas del emisor 12
+INFO    2023-03-14 15:57:06,535 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia consulta de carátulas del emisor BX
+INFO    2023-03-14 15:57:06,585 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia ejecución de consulta carátulas Emisor ATMS26
+INFO    2023-03-14 15:57:06,724 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza ejecución de consulta carátulas Emisor ATMS26
+INFO    2023-03-14 15:57:06,726 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza consulta de carátulas del emisor 26
+INFO    2023-03-14 15:57:06,726 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia consulta de carátulas del emisor BA
+INFO    2023-03-14 15:57:06,775 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia ejecución de consulta carátulas Emisor ATMS27
+INFO    2023-03-14 15:57:06,916 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza ejecución de consulta carátulas Emisor ATMS27
+INFO    2023-03-14 15:57:06,918 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza consulta de carátulas del emisor 27
+INFO    2023-03-14 15:57:06,918 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia consulta de carátulas del emisor IN
+INFO    2023-03-14 15:57:06,963 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia ejecución de consulta carátulas Emisor ATMS36
+INFO    2023-03-14 15:57:07,098 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza ejecución de consulta carátulas Emisor ATMS36
+INFO    2023-03-14 15:57:07,100 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza consulta de carátulas del emisor 36
+INFO    2023-03-14 15:57:07,101 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia consulta de carátulas del emisor BC
+INFO    2023-03-14 15:57:07,143 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia ejecución de consulta carátulas Emisor ATMS37
+INFO    2023-03-14 15:57:07,279 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza ejecución de consulta carátulas Emisor ATMS37
+INFO    2023-03-14 15:57:07,281 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza consulta de carátulas del emisor 37
+INFO    2023-03-14 15:57:07,339 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza ciclo de guardado de Resumen: Total y por marcas
+INFO    2023-03-14 15:57:07,340 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia ciclo de guardado de Resumen: por adquirentes
+INFO    2023-03-14 15:57:07,342 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza ciclo de guardado de Resumen: por adquirentes
+INFO    2023-03-14 15:57:07,342 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Inicia commit de del proceso
+INFO    2023-03-14 15:57:07,379 [main] com.eglobal.genera.resumen.reporte.b.constructor.ConstructorResumenATMS  - Finaliza commit de del proceso

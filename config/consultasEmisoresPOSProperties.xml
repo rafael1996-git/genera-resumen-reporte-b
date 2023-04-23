@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<processes>
+	<process id="POS">
+		<emisor id="12" subafiliados="0">
+			<queries carat="BR">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_prbr inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_brbr inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_bxbr inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="26" subafiliados="0">
+			<queries carat="BX">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_prbx inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_brbx inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_bxbx inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="27" subafiliados="0">
+			<queries carat="BA">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='27' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="36" subafiliados="0">
+			<queries carat="IN">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='36' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="37" subafiliados="0">
+			<queries carat="CP">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_prcp inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_brcp inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_bxcp inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="38" subafiliados="0">
+			<queries carat="MC">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_prmc inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_brmc inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_bxmc inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="54" subafiliados="1">
+			<queries carat="EV">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente,b.bin 
+					from det_adq_prev inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente,b.bin 
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente,b.bin  
+					from det_adq_brev inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente,b.bin 
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente,b.bin  
+					from det_adq_bxev inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente,b.bin 
+				</query>
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente,b.bin  
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente,b.bin 
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="82" subafiliados="0">
+			<queries carat="CI">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='82' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="86" subafiliados="0">
+			<queries carat="ML">
+				<query>
+					select fecha_lote,emisor,count(*) as total_txn_int,
+					sum(importe_txn) as monto_total_txn_int,
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where  b.marca_producto in ('M','V') and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='86' and fecha_lote = ?
+					group by fecha_lote,emisor,marca_producto,adquirente
+				</query>
+			</queries>
+		</emisor>
+	</process>
+	
+</processes>

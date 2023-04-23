@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<processes>
+	<process id="ATMS">
+		<emisor id="12" subafiliados="0">
+			<queries carat="BR">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='12' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")	
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="26" subafiliados="0">
+			<queries carat="BX">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='26' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="27" subafiliados="0">
+			<queries carat="BA">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='27' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="36" subafiliados="0">
+			<queries carat="IN">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='36' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="37" subafiliados="0">
+			<queries carat="BC">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='37' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="38" subafiliados="0">
+			<queries carat="MC">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='38' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="54" subafiliados="1">
+			<queries carat="EV">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente,b.bin 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='54' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente,b.bin
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="82" subafiliados="0">
+			<queries carat="CI">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='82' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="86" subafiliados="0">
+			<queries carat="ML">
+				<query>
+					select iso15_fe_concilia, id_bco, count(*), 
+					sum(decode(iso3_cod_txn_atm[1,2],"01",a.iso4_monto_txn,"31",a.monto_schg)), 
+					case WHEN marca_producto='V' THEN 2 ELSE 1 end AS marca_producto,id_adquirente 
+					from bdc:transacciones a inner join  bines_emisor_8 b 
+					on SUBSTRING(no_plastico FROM 4 FOR 8)=b.bin
+					,  conciliacion:conf_conciliacion c
+					where a.out_swap = c.out_swap 
+					and iso15_fe_concilia= ? and id_bco='86' 
+					and a.id_adquirente != '11011' 
+					and a.id_adquirente != '11007' 
+					and a.out_swap != '11011' 
+					and a.out_swap != '11007' 
+					and a.out_swap != '11009'
+					and a.iso39_cod_resp_em ="00"
+					and a.cod_reverso = "0"
+					and b.marca_producto in ('M','V')
+					and a.iso3_cod_txn_atm[1,2] in("01","31")
+					group by iso15_fe_concilia,id_bco,marca_producto,id_adquirente
+				</query>
+			</queries>
+		</emisor>
+	</process>
+	
+</processes>

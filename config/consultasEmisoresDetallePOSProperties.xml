@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<processes>
+	<process id="POS">
+		<emisor id="12" subafiliados="0">
+			<queries carat="BR">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_prbr inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12' 
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_brbr inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12' 
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_bxbr inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='12'
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="26" subafiliados="0">
+			<queries carat="BX">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_prbx inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_brbx inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_bxbx inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='26'
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="27" subafiliados="0">
+			<queries carat="BA">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='27'
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="36" subafiliados="0">
+			<queries carat="IN">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='36'
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="37" subafiliados="0">
+			<queries carat="BC">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_prcp inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_brcp inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_bxcp inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='37'
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="38" subafiliados="0">
+			<queries carat="MC">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_prmc inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_brmc inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_bxmc inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38'
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='38'
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="54" subafiliados="1">
+			<queries carat="EV">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente,b.bin 
+					from det_adq_prev inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and b.bin = ? 
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente,b.bin 
+					from det_adq_brev inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and b.bin = ?
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente,b.bin 
+					from det_adq_bxev inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and b.bin = ? 
+				</query>
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente,b.bin 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='54' and b.bin = ? 
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="82" subafiliados="0">
+			<queries carat="CI">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='82'
+				</query>
+			</queries>
+		</emisor>
+		<emisor id="86" subafiliados="0">
+			<queries carat="ML">
+				<query>
+					select fecha_lote,emisor,importe_txn,adquirente 
+					from det_adq_adem inner join  bines_emisor_8 b 
+					on SUBSTRING(num_cuenta FROM 1 FOR 8)=b.bin 
+					where fecha_lote between ? and ? and b.marca_producto = ?
+					and cod_tra='05' and cod_razon='00' and codigo_uso='1'
+					and emisor='86'
+				</query>
+			</queries>
+		</emisor>
+	</process>
+	
+</processes>
